@@ -1,6 +1,6 @@
 package Project2.ElementaryLogicGates.Tests;
 
-import Project2.ElementaryLogicGates.Not;
+import Project2.ElementaryLogicGates.*;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
