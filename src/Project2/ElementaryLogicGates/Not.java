@@ -2,15 +2,15 @@ package Project2.ElementaryLogicGates;
 
 public class Not {
     public boolean out;
-    public Nand nand1;
+    public Nand nand;
 
     public Not() {
-        nand1=new Nand();
+        nand=new Nand();
     }
 
     public void compute(boolean in){
-        nand1.compute(in,in);
-        out=nand1.out;
+        nand.compute(in,in);
+        out=nand.out;
     }
 
 }
