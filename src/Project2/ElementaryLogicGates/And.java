@@ -2,8 +2,8 @@ package Project2.ElementaryLogicGates;
 
 public class And {
     public boolean out;
-    public Nand nand1;
-    public Not not1;
+    private Nand nand1;
+    private Not not1;
 
     public And() {
         nand1 = new Nand();
