@@ -15,9 +15,9 @@ public class Dmux {
 
     public void compute(boolean in, boolean sel){
     not1.compute(sel);
-    and1.compute(not1.out,in);
-    and2.compute(in,sel);
-    a= and1.out;
-    b= and2.out;
+    and1.compute(in,sel);
+    and2.compute(not1.out,in);
+    a= and2.out;
+    b= and1.out;
     }
 }
