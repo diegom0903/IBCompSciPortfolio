@@ -4,28 +4,17 @@ import Project2.ElementaryLogicGates.Mux;
 
 public class Mux16 {
     public boolean[] out = new boolean[16];
-    private Mux mux1 = new Mux();
-    private Mux mux2 = new Mux();
-    private Mux mux3 = new Mux();
-    private Mux mux4 = new Mux();
-    private Mux mux5 = new Mux();
-    private Mux mux6 = new Mux();
-    private Mux mux7 = new Mux();
-    private Mux mux8 = new Mux();
-    private Mux mux9 = new Mux();
-    private Mux mux10 = new Mux();
-    private Mux mux11 = new Mux();
-    private Mux mux12 = new Mux();
-    private Mux mux13 = new Mux();
-    private Mux mux14 = new Mux();
-    private Mux mux15 = new Mux();
-    private Mux mux16 = new Mux();
+    private Mux[] muxs =  new Mux[16];
 
     public Mux16() {
+        for (int i = 0; i < 16; i++) {
+            muxs[i] = new Mux();
+        }
     }
-
-    public void compute(boolean[] a,boolean[] b,boolean[] sel){
-
+        public void compute (boolean[] a, boolean[] b, boolean[] sel){
+            for (int i = 0; i < 16; i++) {
+                muxs[i].compute(a[i], b[i], sel[i]);
+                out[i] = muxs[i].out;
+            }
+        }
     }
-}
-

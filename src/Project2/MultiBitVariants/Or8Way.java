@@ -13,7 +13,6 @@ public class Or8Way {
     private Or or7 = new Or();
 
     public Or8Way(){
-
     }
 
     public void compute(boolean[] in){

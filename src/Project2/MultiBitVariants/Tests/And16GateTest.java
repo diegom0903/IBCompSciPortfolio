@@ -15,7 +15,7 @@ public class And16GateTest {
         boolean[] a = BMath.stringToBooleanArray("11111111111111111");
         boolean[] b = BMath.stringToBooleanArray("00001111111111111");
         and16.compute(a,b);
-        boolean[] expected = BMath.stringToBooleanArray("00001111111111111");
+        boolean[] expected = BMath.stringToBooleanArray("0000111111111111");
         assertArrayEquals(expected,and16.out);
 
     }
